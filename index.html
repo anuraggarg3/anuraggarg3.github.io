@@ -82,6 +82,29 @@
       /* background-color: #0077b5; */
       color: #0077b5;
    }
+      @media  (max-width:500px)  {
+        .heading{
+            font-size: 30px;
+        }
+        .subheading{
+            font-size: 22px;
+        }
+        .mainlist{
+            font-size: 20px;
+        }
+        .list{
+            font-size: larger;
+        }
+  .github ,.twitter,.linkdin
+   {
+       float: right;
+       
+       font-size: 35px;
+       margin: 8px 20px;
+/* padding-right: 20px; */
+   }
+      }
+   
 </style>
 </head>
 <body>
@@ -142,7 +165,6 @@
     const countEl = document.getElementById('count');
 
 updateVisitCount();
-
 function updateVisitCount() {
 	fetch('https://api.countapi.xyz/update/anurag3/cpupdate/?amount=1')
 	.then(res => res.json())
