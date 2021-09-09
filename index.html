@@ -82,9 +82,30 @@
       /* background-color: #0077b5; */
       color: #0077b5;
    }
-      @media  (max-width:500px)  {
+   @media  (max-width:980px) and (min-width:500px) {
+    .heading{
+            font-size: 40px;
+            text-align: center;
+        /* font-size: 40px; */
+        font-weight: bold;
+        font-style: italic;
+        user-select: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       
+        width: fit-content;
+        }
+   }
+      @media  (max-width:500px) and (min-width:370px) {
         .heading{
-            font-size: 28px;
+            font-size: 25px;
+            text-align: center;
+        /* font-size: 40px; */
+        font-weight: bold;
+        font-style: italic;
+        user-select: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       
+        width: fit-content;
         }
         .subheading{
             font-size: 20px;
@@ -102,6 +123,31 @@
        
        font-size: 35px;
        margin: 8px 20px;
+/* padding-right: 20px; */
+   }
+      }
+  
+      @media  (max-width:370px) and (min-width:0px) {
+          .logo{
+             height: 50px;
+          }
+          .heading{
+            font-size: 25px;
+            text-align: center;
+        /* font-size: 40px; */
+        font-weight: bold;
+        font-style: italic;
+        user-select: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       
+        width: fit-content;
+        }
+        .github ,.twitter,.linkdin
+   {
+       float: right;
+       
+       font-size: 30px;
+       margin: 8px 10px;
 /* padding-right: 20px; */
    }
       }
