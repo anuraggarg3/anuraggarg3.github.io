@@ -9,6 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/ldLoader@v1.0.0/dist/ldld.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/ldLoader@v1.0.0/dist/ldld.min.js">
 <style>
     *{
         font-family: 'Roboto', sans-serif;
@@ -84,11 +87,51 @@
    .twitter:visited{
     color: #00acee ;
    }
-  
+  .github{
+      color: black;
+  }
+  .github:visited{
+      color: black;
+  }
    .twitter:hover{
-       padding: 2px 0px;
+       padding: 1.3px 0px;
    }
+   .changeviews{
+          font-size: 20px;
+          font-weight: 600;
+          float: right;
+          /* margin-top: 1px; */
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* top: 23334px; */
+      
+      }
+      .changeviews:hover{
+        color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 4px rgba(100, 100, 100);
+  cursor:pointer;
+      }
+   .viewicon{
+       font-size: larger;
+       float:right;
+       /* clear: left; */
+       
+       margin-top: 0.5px;
+   }
+   .footbar{
+       user-select: none;
+       font-size: 20px;
+       font-weight: 400;
+       margin-top: 30px;
+       background-color:rgba(246, 246, 246) ;
+       /* background-color: turquoise; */
+       margin-bottom: 0%;
+     text-align: center;
 
+       }
+       .rule{
+           margin-top: 100px;
+           
+       }
    @media  (max-width:980px) and (min-width:500px) {
     .heading{
             font-size: 40px;
@@ -101,6 +144,9 @@
        
         width: fit-content;
         }
+        /* .changeviews{
+            font-size: 15px;
+        } */
    }
       @media  (max-width:500px) and (min-width:370px) {
         .heading{
@@ -132,6 +178,9 @@
        margin: 8px 20px;
 /* padding-right: 20px; */
    }
+   .changeviews{
+            font-size: 10px;
+        }
       }
   
       @media  (max-width:370px) and (min-width:0px) {
@@ -158,14 +207,24 @@
 /* padding-right: 20px; */
    }
       }
-   
+      #loading{
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          background: white url('https://i.gifer.com/CVyf.gif') no-repeat center;
+          z-index: 1000;
+         float: right;
+         /* margin: auto; */
+      }
 </style>
 </head>
-<body>
+<body onload="myfunction()">
+   
+<div id="loading"></div>
      <a href="http://127.0.0.1:5501/speechtext.html"><img src="https://see.fontimg.com/api/renderfont4/ywwaM/eyJyIjoiZnMiLCJoIjo5OCwidyI6MTUwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiJ9/QW51cmFn/theprestigesignature.png" class="logo" alt="Anurag"></a>
     
-     <span class="twitter"><i class="fab fa fa-twitter"></i></span>
-    <span class="github"><i class="fab fa fa-github"></i></span>
+     <span><a href="https://twitter.com/anuraggarg_3" class="twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa fa-twitter"></a></i></span>
+    <span ><a href="https://github.com/anuraggarg3" class="github" target="_blank" rel="noopener noreferrer"><i class="fab fa fa-github"></a></i></span>
     <span ><a href="https://www.linkedin.com/in/anurag-garg-760109213/" target="_blank" rel="noopener noreferrer" class="linkdin"><i class="fab fa fa-linkedin"></i></a></i></span>
  <div class="heading"> The Best Resources For Competitive Programming</div>
  <div class="subheading">All resources at one place</div>
@@ -209,13 +268,20 @@
     </ul>
  </ul>
 </div>
-<p>This page was viewed</p>
-<h1 id="count"></h1>
-<p>times</p>
+<span class="changeviews"><span class="views"> Views : <div class="material-icons viewicon" >visibility</div><span class="counter" id="count"></span></span > </span>
+<div style=" background-color:rgba(246, 246, 246) ;">
+<hr class="rule" >
+
+<p class="footbar">© 2021 Anurag Garg</p>
+</div>
 
 </body>
 </html>
 <script>
+    function myfunction(){
+        document.getElementById('loading').style.display="none";
+    }
+    
     const countEl = document.getElementById('count');
 
 updateVisitCount();
