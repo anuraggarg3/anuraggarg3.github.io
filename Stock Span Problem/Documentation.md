@@ -15,11 +15,15 @@ LOGIC
 7.	If the top of stack is lesser than the current pointed element then it has to be popped else that element index has to be added to the index.
 8.	By following all these procedures we will get the index of all the greatest elemnts to the left of the pointed index.
 9.	The final result i.e the span of days will be given by subtracting the index of the particular price in the array and the element present on the same index in the vector. 10.This is the algorithm ,I followed for this problem.
+
 NOTE
-This problem is very famous and common during the placement procedure. For reference of whole statement of problem you can click on Question link:("https://leetcode.com/problems/online-stock-span/")
+
+This problem is very famous and common during the placement procedure. For reference of whole statement of problem you can click on Question link:[Question]("https://leetcode.com/problems/online-stock-span/")
 
 CODE
+
 You can look on to the code for reference:-
+
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -69,6 +73,7 @@ for(int i=0;i<v.size();i++)
 
 return 0;
 }
+
 Test case:
 Input: [100,80,60,70,60,75,85]
 Output:[1,1,1,2,1,4,6]
