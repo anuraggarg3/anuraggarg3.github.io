@@ -88,7 +88,7 @@ color: #00acee ;
 .btn{
     display: inline-block;
     margin-top: 1rem;
-    padding:.8rem 3rem;
+    padding:.4rem 1rem;
     background:#000000;
     color:#fff;
     cursor: pointer;
@@ -98,7 +98,7 @@ color: #00acee ;
     transition: 0.3s;
 }
 .btn:hover{
-    letter-spacing: .2rem!important; 
+    letter-spacing: .1rem!important; 
 }
 .changeviews{
       font-size: 20px;
@@ -222,3 +222,7 @@ cursor:pointer;
      float: right;
      /* margin: auto; */
   }
+.clock{
+    text-align: center;
+    background-color:rgba(246, 246, 246) ;
+}
