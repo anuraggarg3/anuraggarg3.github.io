@@ -1,7 +1,6 @@
 Vectors are same as dynamic arrays with the ability to resize itself automatically when an element is inserted or deleted, with their storage being handled automatically by the container. Vector elements are placed in contiguous storage so that they can be accessed and traversed using iterators. In vectors, data is inserted at the end. Inserting at the end takes differential time, as sometimes there may be a need of extending the array. Removing the last element takes only constant time because no resizing happens. Inserting and erasing at the beginning or in the middle is linear in time.
 
  
-
 Certain functions associated with the vector are:
 Iterators
 
@@ -54,9 +53,6 @@ Output of crbegin and crend : 5 4 3 2 1
 Capacity
 
 
-
-
-
 size() – Returns the number of elements in the vector.
 max_size() – Returns the maximum number of elements that the vector can hold.
 capacity() – Returns the size of the storage space currently allocated to the vector expressed as number of elements.
@@ -64,6 +60,7 @@ resize(n) – Resizes the container so that it contains ‘n’ elements.
 empty() – Returns whether the container is empty.
 shrink_to_fit() – Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity.
 reserve() – Requests that the vector capacity be at least enough to contain n elements.
+
 
 // C++ program to illustrate the
 // capacity function in vector
@@ -162,7 +159,6 @@ clear() – It is used to remove all the elements of the vector container
 emplace() – It extends the container by inserting new element at position
 emplace_back() – It is used to insert a new element into the vector container, the new element is added to the end of the vector
 .
-
 
 // C++ program to illustrate the
 // Modifiers in vector
