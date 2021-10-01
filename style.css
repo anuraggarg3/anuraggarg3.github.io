@@ -16,13 +16,15 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin:20px auto;
     width:max-content;
+    padding:8px;
 }
 .subheading
 {
     text-align: center;
     font-size: 24px;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.14);
-  
+    padding:8px;
+
     margin: auto;
     margin-top: 25px ;
     user-select: none;
@@ -33,6 +35,8 @@
     font-size: 30px;
     margin-top: 25px;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.14);
+    padding:8px;
+
     width: fit-content;
     user-select: none;
     /* text-decoration: none; */
@@ -81,12 +85,29 @@ color: #00acee ;
 .twitter:hover{
    padding: 1.3px 0px;
 }
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:#000000;
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    outline: none;
+    transition: 0.3s;
+}
+.btn:hover{
+    letter-spacing: .2rem!important; 
+}
 .changeviews{
       font-size: 20px;
       font-weight: 600;
       float: right;
       /* margin-top: 1px; */
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding:8px;
+
     /* top: 23334px; */
   
   }
