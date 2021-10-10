@@ -4,4 +4,4 @@
 ### To make a contribution to this repository.
 ### First fork this repository.
 ### After that, you may update  the link and other material, and then create a pull request to merge it into this website.
-### Your contribution can be helpful for other as well as make a largest community for CP.
+### Your contribution can be helpful for others as well as can make this the largest community for CP.
