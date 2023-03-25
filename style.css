@@ -54,6 +54,9 @@
 .list:visited{
     color: rgb(18, 2, 240);
 }
+.list a:hover{
+            opacity: .9;
+}
 .github ,.twitter,.linkdin
 {
    float: right;
@@ -65,6 +68,9 @@
 .linkdin{
 color: #0077b5;
 /* padding: 6px; */
+}
+.linkdin:hover,.github:hover{
+        transform: scale(1.2);
 }
 /* .linkdin:visited{
 color: #0077b5;
@@ -83,7 +89,8 @@ color: #00acee ;
   color: black;
 }
 .twitter:hover{
-   padding: 1.3px 0px;
+   /* padding: 1.3px 0px; */
+   transform: scale(1.2);
 }
 .btn{
     display: inline-block;
